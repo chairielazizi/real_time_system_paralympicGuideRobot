@@ -1,0 +1,45 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.0314804316304839 0.8058340475866266 0.5913040420752363 3.0869641193531243
+  position 0.08280196288257057 0.9191680282218992 -0.23313471692173254
+  follow "e-puck"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+E-puck {
+  hidden position_0_0 356.9879644399015
+  hidden position_0_1 401.0502216328229
+  hidden rotation_1 -1 0 0 5.129587237844632
+  hidden rotation_2 1 0 0 1.0736380266706236
+  translation 0.0004055697964439124 -6.399224116013062e-05 6.925821831428625e-05
+  rotation 1.3410190646749205e-05 0.9999999946148087 -0.00010291039503486726 2.918482138888913
+  controller "LineFollower1"
+  battery [
+    0, 0
+  ]
+  groundSensorsSlot [
+    DistanceSensor {
+      translation 0 -0.01 0
+      name "LeftR"
+      description "i"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0 0.01 0
+      name "RightR"
+      type "infra-red"
+    }
+  ]
+}
+RectangleArena {
+  floorSize 2 2
+  floorTileSize 0.25 0.25
+  floorAppearance NULL
+}
+TrackOne {
+}
